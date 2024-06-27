@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../test-container/">
-      
-      
-        <link rel="next" href="../test-spec/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Standalone test executable - Red Hat Best Practices Test Suite for Kubernetes</title>
+        <title>Index - Red Hat Best Practices Test Suite for Kubernetes</title>
       
     
     
@@ -72,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#standalone-test-executable" class="md-skip">
+        <a href="#how-to-deploy-the-cnf-cert-suite-app-inside-a-kubernetesopenshift-cluster" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Standalone test executable
+              Index
             
           </span>
         </div>
@@ -248,22 +244,17 @@
         
   
   
-    
   
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../test-container/" class="md-tabs__link">
-          
+    <li class="md-tabs__item">
+      <a href="../test-run/" class="md-tabs__link">
+        
   
     
   
-  Build | Execute
+  Run
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
@@ -525,237 +516,18 @@
       
   
   
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Build | Execute
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Build | Execute
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../test-container/" class="md-nav__link">
+      <a href="../test-run/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prebuilt container
+    Run
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Standalone test executable
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Standalone test executable
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-install-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Install dependencies
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-build-the-test-suite" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Build the Test Suite
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Build the Test Suite">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3-test-a-workload" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Test a workload
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Test a workload">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-a-single-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run a single test
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-all-of-the-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run all of the tests
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Run all of the tests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-a-subset" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run a subset
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#labels-for-offline-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Labels for offline environments
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output-targz-file-with-results-and-web-viewer-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output tar.gz file with results and web viewer files
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-test-a-workload" class="md-nav__link">
-    <span class="md-ellipsis">
-      Build + Test a workload
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1089,101 +861,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-install-dependencies" class="md-nav__link">
+  <a href="#cnf-certsuiteyaml" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Install dependencies
+      cnf-certsuite.yaml
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-build-the-test-suite" class="md-nav__link">
+  <a href="#kustomizationyaml" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Build the Test Suite
+      kustomization.yaml
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. Build the Test Suite">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3-test-a-workload" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Test a workload
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Test a workload">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-a-single-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run a single test
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-all-of-the-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run all of the tests
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Run all of the tests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-a-subset" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run a subset
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#labels-for-offline-environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Labels for offline environments
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output-targz-file-with-results-and-web-viewer-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output tar.gz file with results and web viewer files
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-test-a-workload" class="md-nav__link">
-    <span class="md-ellipsis">
-      Build + Test a workload
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1205,118 +896,59 @@
   
 
 
-<!-- markdownlint-disable code-block-style link-fragments line-length no-bare-urls no-emphasis-as-heading -->
-<h1 id="standalone-test-executable">Standalone test executable<a class="headerlink" href="#standalone-test-executable" title="Permanent link">&para;</a></h1>
-<p><strong>Prerequisites</strong></p>
-<p>The repo is cloned and all the commands should be run from the cloned repo.</p>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/workspace
-<span class="nb">cd</span><span class="w"> </span>~/workspace
-git<span class="w"> </span>clone<span class="w"> </span>git@github.com:test-network-function/cnf-certification-test.git
-<span class="nb">cd</span><span class="w"> </span>cnf-certification-test
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>By default, <code>cnf-certification-test</code> emits results to <code>cnf-certification-test/cnf-certification-tests_junit.xml</code>.</p>
-</div>
-<h2 id="1-install-dependencies">1. Install dependencies<a class="headerlink" href="#1-install-dependencies" title="Permanent link">&para;</a></h2>
-<p>Depending on how you want to run the test suite there are different dependencies that will be needed.</p>
-<p>If you are planning on running the test suite as a container, the only pre-requisite is Docker or Podman.</p>
-<p>If you are planning on running the test suite as a standalone binary, there are pre-requisites that will
-need to be installed in your environment prior to runtime.</p>
-<table>
-<thead>
-<tr>
-<th>Dependency</th>
-<th>Minimum Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://golang.org/dl/">GoLang</a></td>
-<td>1.22</td>
-</tr>
-<tr>
-<td><a href="https://golangci-lint.run/usage/install/">golangci-lint</a></td>
-<td>1.58.1</td>
-</tr>
-<tr>
-<td><a href="https://stedolan.github.io/jq/">jq</a></td>
-<td>1.6</td>
-</tr>
-<tr>
-<td><a href="https://mirror.openshift.com/pub/openshift-v4/clients/ocp/">OpenShift Client</a></td>
-<td>4.12</td>
-</tr>
-</tbody>
-</table>
-<p>Other binary dependencies required to run tests can be installed using the following command:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<!-- markdownlint-disable line-length no-bare-urls no-emphasis-as-heading -->
+<h1 id="how-to-deploy-the-cnf-cert-suite-app-inside-a-kubernetesopenshift-cluster">How to deploy the <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Suite App inside a Kubernetes/Openshift cluster<a class="headerlink" href="#how-to-deploy-the-cnf-cert-suite-app-inside-a-kubernetesopenshift-cluster" title="Permanent link">&para;</a></h1>
+<p>This is a developer&rsquo;s guide to deploy a Pod in a kubernetes/Openshift cluster that runs the <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Suite app inside.</p>
+<p>This folder contains two files:</p>
 <ul>
-<li>You must also make sure that <code>$GOBIN</code> (default <code>$GOPATH/bin</code>) is on your <code>$PATH</code>.</li>
-<li>Efforts to containerise this offering are considered a work in progress.</li>
+<li><a href="cnf-certsuite.yaml">./cnf-certsuite.yaml</a></li>
+<li><a href="kustomization.yaml">./kustomization.yaml</a></li>
 </ul>
-</div>
-<h2 id="2-build-the-test-suite">2. Build the Test Suite<a class="headerlink" href="#2-build-the-test-suite" title="Permanent link">&para;</a></h2>
-<p>In order to build the test executable, first make sure you have satisfied the <a href="#dependencies">dependencies</a>.</p>
-<div class="highlight"><pre><span></span><code>make<span class="w"> </span>build-cnf-tests
+<h2 id="cnf-certsuiteyaml">cnf-certsuite.yaml<a class="headerlink" href="#cnf-certsuiteyaml" title="Permanent link">&para;</a></h2>
+<p>This file contains all the kubernetes templates for deploying the <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Suite inside a Pod named &ldquo;cnf-certsuite&rdquo; in a namespace also named &ldquo;cnf-certsuite&rdquo;. In order to deploy the pod, just write:</p>
+<div class="highlight"><pre><span></span><code><span class="go">oc apply -f k8s/cnf-certsuite.yaml</span>
+<span class="go">namespace/cnf-certsuite created</span>
+<span class="go">clusterrole.rbac.authorization.k8s.io/cnf-certsuite-cr created</span>
+<span class="go">clusterrolebinding.rbac.authorization.k8s.io/cnf-certsuite-crb created</span>
+<span class="go">configmap/cnf-certsuite-config created</span>
+<span class="go">secret/cnf-certsuite-preflight-dockerconfig created</span>
+<span class="go">pod/cnf-certsuite created</span>
 </code></pre></div>
-<p><em>Gotcha:</em> The <code>make build*</code> commands run unit tests where appropriate. They do NOT test the workload.</p>
-<h3 id="3-test-a-workload">3. Test a workload<a class="headerlink" href="#3-test-a-workload" title="Permanent link">&para;</a></h3>
-<p>A workload is tested by specifying which suites to run using the <code>run-cnf-suites.sh</code> helper
-script.</p>
-<p>Run any combination of the suites keywords listed at in the <a href="../test-spec/#general-tests">General tests</a> section, e.g.</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;lifecycle&quot;</span>
-./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;networking,lifecycle&quot;</span>
-./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;operator,networking&quot;</span>
-./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;networking,platform-alteration&quot;</span>
-./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;networking,lifecycle,affiliated-certification,operator&quot;</span>
+<p>The first thing in that yaml is the namespace, so it&rsquo;s the first resource that will be created in the cluster. Then, a cluster role and its cluster role binding will be created. This cluster role is needed because the <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Suite needs access to all the resources in the whole cluster.</p>
+<p>Then, there&rsquo;s a configMap with the whole config (tnf_config.yaml) that will be used by the pod to create the tnf_config.yaml file inside a volume folder. Also, there&rsquo;s a secret with the preflight&rsquo;s dockerconfig file content that will also be used by the <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Suitep pod.</p>
+<p>The <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Suite pod is the last resource defined in the cnf-certsuite.yaml file. It has only one container that uses the <a href="latest">quay.io/testnetworkfunction/cnf-certification-test:latest</a> tag of the <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Suite. The command slice of this container has a hardcoded labels to run as many test cases as possible, excluding the intrusive ones.</p>
+<h2 id="kustomizationyaml">kustomization.yaml<a class="headerlink" href="#kustomizationyaml" title="Permanent link">&para;</a></h2>
+<p>This kustomization file allows the deployment of the <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Suite using this command:</p>
+<div class="highlight"><pre><span></span><code><span class="go">oc kustomize k8s/ | oc apply -f -</span>
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>As with &ldquo;run-tnf-container.sh&rdquo;, if <code>-l</code> is not specified here, the tnf will run in &lsquo;diagnostic&rsquo; mode.</p>
-</div>
-<p>By default the claim file will be output into the same location as the test executable. The <code>-o</code> argument for
-    <code>run-cnf-suites.sh</code> can be used to provide a new location that the output files will be saved to. For more detailed
-    control over the outputs, see the output of <code>cnf-certification-test.test --help</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nb">cd</span><span class="w"> </span>cnf-certification-test<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./cnf-certification-test.test<span class="w"> </span>--help
+<p>The <code>kustomization</code> tool used by <code>oc</code> will parse the content of the <a href="kustomization.yaml">./kustomization.yaml</a> file, which consists of a set of &ldquo;transformers&rdquo; over the resources defined in <a href="cnf-certsuite.yaml">./cnf-certsuite.yaml</a>.</p>
+<p>By default, that command will deploy the <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Suite Pod without any mutation: it will be deployed in the same namespace and with the same configuration than using the <code>oc apply -f k8s/cnf-certsuite.yaml</code>.</p>
+<p>But there are the three example of modifications included in <a href="kustomization.yaml">./kustomization.yaml</a> that can be used out of the box that can be handy:</p>
+<ol>
+<li>The namespace and the prefix/suffix of each resource&rsquo;s name. By default, the <a href="cnf-certsuite.yaml">./cnf-certsuite.yaml</a> uses the namespace &ldquo;cnf-certsuite&rdquo; to deploy all the reources (except the cluster role and the cluster role binding), but this can be changed uncommenting the line that starts with <code>namespace:</code>. It&rsquo;s highly recommended to uncomment at least one of suffixName/prefixName so unique cluster role &amp; cluster role-bindings can be created for each <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Pod. This way, you could run more than one <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr> Cert Pod in the same cluster!.</li>
+<li>The (ginkgo) labels expression, in case you want to run different test cases. Uncomment the object that starts with &ldquo;patches:&rdquo;. The commented example changes the command to use the &ldquo;preflight&rdquo; label only.</li>
+<li>The value of the TNF_NON_INTRUSIVE_ONLY env var. Uncomment the last object that starts with &ldquo;patches:&rdquo;. The commented example changes the TNF_NON_INTRUSIVE_ONLY to false, so all the intrusive TCs will run in case the lifecycle TCs are selected to run by the appropriate labels.</li>
+</ol>
+<p>In case both (1) and (2) wants to be used, just create a list of patches like this:</p>
+<div class="highlight"><pre><span></span><code><span class="go">patches:</span>
+<span class="go">  - target:</span>
+<span class="go">      version: v1</span>
+<span class="go">      kind: Pod</span>
+<span class="go">      name: cnf-certsuite</span>
+<span class="go">    patch: |</span>
+<span class="go">      - op: replace</span>
+<span class="go">        path: /spec/containers/0/args/1</span>
+<span class="go">        value: |</span>
+<span class="go">          ./run-cnf-suites.sh -l &#39;preflight&#39; ; sleep inf</span>
+<span class="go">  - target:</span>
+<span class="go">      version: v1</span>
+<span class="go">      kind: Pod</span>
+<span class="go">      name: cnf-certsuite</span>
+<span class="go">    patch: |</span>
+<span class="go">      - op: replace</span>
+<span class="go">        path: /spec/containers/0/env/0/value</span>
+<span class="go">        value: false</span>
 </code></pre></div>
-<h4 id="run-a-single-test">Run a single test<a class="headerlink" href="#run-a-single-test" title="Permanent link">&para;</a></h4>
-<p>All tests have unique labels, which can be used to filter which tests are to be run. This is useful when debugging
-a single test.</p>
-<p>To select the test to be executed when running <code>run-cnf-suites.sh</code> with the following command-line:</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span>operator-install-source
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The test labels work the same as the suite labels, so you can select more than one test with the filtering mechanism shown before.</p>
-</div>
-<h3 id="run-all-of-the-tests">Run all of the tests<a class="headerlink" href="#run-all-of-the-tests" title="Permanent link">&para;</a></h3>
-<p>You can run all of the tests (including the intrusive tests and the extended suite) with the following commands:</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span>all
-</code></pre></div>
-<h4 id="run-a-subset">Run a subset<a class="headerlink" href="#run-a-subset" title="Permanent link">&para;</a></h4>
-<p>You can find all the labels attached to the tests by running the following command:</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>--list
-</code></pre></div>
-<p>You can also check the <a href="CATALOG.md">CATALOG.md</a> to find all test labels.</p>
-<h4 id="labels-for-offline-environments">Labels for offline environments<a class="headerlink" href="#labels-for-offline-environments" title="Permanent link">&para;</a></h4>
-<p>Some tests do require connectivity to Red Hat servers to validate certification status.
-To run the tests in an offline environment, skip the tests using the <code>l</code> option.</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s1">&#39;!online&#39;</span>
-</code></pre></div>
-<p>Alternatively, if an offline DB for containers, helm charts and operators is available, there is no need to skip those tests if the environment variable <code>TNF_OFFLINE_DB</code> is set to the DB location. This DB can be generated using the <a href="https://github.com/test-network-function/oct">OCT tool</a>.</p>
-<p>Note: Only partner certified images are stored in the offline database. If Red Hat images are checked against the offline database, they will show up as not certified. The online database includes both Partner and Redhat images.</p>
-<h4 id="output-targz-file-with-results-and-web-viewer-files">Output tar.gz file with results and web viewer files<a class="headerlink" href="#output-targz-file-with-results-and-web-viewer-files" title="Permanent link">&para;</a></h4>
-<p>After running all the test cases, a compressed file will be created with all the results files and web artifacts to review them.</p>
-<p>By default, only the <code>claim.js</code>, the <code>cnf-certification-tests_junit.xml</code> file and this new tar.gz file are created after the test suite has finished, as this is probably all that normal partners/users will need.</p>
-<p>Two env vars allow to control the web artifacts and the the new tar.gz file generation:</p>
-<ul>
-<li>TNF_OMIT_ARTIFACTS_ZIP_FILE=true/false : Defaulted to false in the launch scripts. If set to true, the tar.gz generation will be skipped.</li>
-<li>TNF_INCLUDE_WEB_FILES_IN_OUTPUT_FOLDER=true/false : Defaulted to false in the launch scripts. If set to true, the web viewer/parser files will also be copied to the output (claim) folder.</li>
-</ul>
-<h3 id="build-test-a-workload">Build + Test a workload<a class="headerlink" href="#build-test-a-workload" title="Permanent link">&para;</a></h3>
-<p>Refer <a href="../developers/">Developers&rsquo; Guide</a></p>
 <!-- markdownlint-disable first-line-heading -->
 
 
